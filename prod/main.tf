@@ -23,7 +23,7 @@ terraform {
 }
 
 module "compute" {
-  source        = "../moduły/main"
+  source        = "../moduły"
   name          = var.name
   ami           = var.ami
   instance_type = var.instance_type
