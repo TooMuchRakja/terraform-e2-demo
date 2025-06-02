@@ -27,7 +27,7 @@ jobs:
           terraform_version: 1.5.7
 
       - name: Terraform Init
-        run: terraform init
+        run: terraform init -backend-config=../prod/backend.conf.hcl
 
       - name: Terraform Destroy
         run: terraform destroy -auto-approve -var-file="prod.tfvars"
