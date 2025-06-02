@@ -1,12 +1,7 @@
 terraform {
   required_version = "1.5.7"
 
-  backend "s3" {
-    bucket  = "${var.bucket_name}"
-    key     = "14-github_actions/prod/terraform.tfstate"
-    region  = "eu-central-1"
-    encrypt = true
-  }
+  backend "s3" {}
 
   required_providers {
     aws = {

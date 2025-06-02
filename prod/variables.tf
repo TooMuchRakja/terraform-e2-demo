@@ -29,6 +29,3 @@ variable "name" {
   default     = "maszyna-ec2"
 }
 
-variable "bucket_name" {
-  type = string
-}
