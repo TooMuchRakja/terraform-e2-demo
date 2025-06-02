@@ -2,7 +2,7 @@ terraform {
   required_version = "1.5.7"
 
   backend "s3" {
-    bucket  = "terraform-kurs-wiaderko-199548"
+    bucket  = "${var.bucket_name}"
     key     = "14-github_actions/prod/terraform.tfstate"
     region  = "eu-central-1"
     encrypt = true

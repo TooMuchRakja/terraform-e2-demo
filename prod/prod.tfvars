@@ -5,3 +5,4 @@ tags = {
   Env = "prod"
   Typ = "maszyna_prod"
 }
+bucket_name = "terraform-kurs-wiaderko-199548"
